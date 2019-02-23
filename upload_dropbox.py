@@ -11,6 +11,9 @@ from dropbox.files import WriteMode
 def upload(token, source, target):
     """Simple uploader"""
     dbx = dropbox.Dropbox(token)
+    # Dropbox requires the upload path starts with `/`
+    if not target.startswith("/"):
+        target = f"/{target}"
     with open(source, "rb") as f:
         dbx.files_upload(f.read(), target, mode=WriteMode("overwrite"))
 

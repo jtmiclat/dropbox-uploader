@@ -18,3 +18,4 @@ RUN poetry install --no-dev -n
 
 # Set Entry point
 ENTRYPOINT [ "/dropbox-uploader/entrypoint.sh" ]
+WORKDIR /mount

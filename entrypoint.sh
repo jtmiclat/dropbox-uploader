@@ -1,3 +1,3 @@
 #!/bin/bash
 set -e
-python upload_dropbox.py "$@"
+python /dropbox-uploader/upload_dropbox.py "$@"
