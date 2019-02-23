@@ -3,5 +3,5 @@ pool:
 steps:
   - script: docker build -t $(dockerId)/$(imageName) 
   - script: |
-    docker login -u $(dockerId) -p $(dockerPswd)
-    docker push $(dockerId)/$(imageName)
+    docker login -u "$(dockerId)" -p "$(dockerPswd)"
+    docker push "$(dockerId)/$(imageName)"
