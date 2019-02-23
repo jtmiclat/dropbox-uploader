@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM python:3.6-slim
 
 LABEL maintainer="Jt Miclat <jtmiclat@gmail.com>"
 
@@ -17,5 +17,6 @@ COPY . /dropbox-uploader
 RUN poetry install --no-dev -n
 
 # Set Entry point
-ENTRYPOINT [ "/dropbox-uploader/entrypoint.sh" ]
 WORKDIR /mount
+ENTRYPOINT [ "/dropbox-uploader/entrypoint.sh" ]
+
