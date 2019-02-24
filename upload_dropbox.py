@@ -5,7 +5,7 @@ from dropbox.files import WriteMode
 
 
 @click.command()
-@click.option("--token", help="Dropbox Token", required=True)
+@click.option("--token", help="Dropbox Token", required=True, envvar="DROPBOX_TOKEN")
 @click.option("--source", help="Source file", required=True)
 @click.option("--target", help="Target path to upload to dropbox", required=True)
 def upload(token, source, target):
