@@ -1,5 +1,7 @@
 # Dropbox Uploader
 
+[![Build Status](https://dev.azure.com/jtcmic/jtcmic/_apis/build/status/jtmiclat.dropbox-uploader?branchName=master)](https://dev.azure.com/jtcmic/jtcmic/_build/latest?definitionId=2&branchName=master)
+
 Super Simple Dropbox Uploader Docker Image
 
 ## Usage
